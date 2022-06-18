@@ -1,9 +1,14 @@
-#include "€.hpp"
+#pragma once
 
-€::€( void ) { std::cout<< "Default € constructor called " << std::endl; }
+#include <iostream>
 
-€::€( const € &€ ) { (*this) = €; }
+class €
+{
+	private:
 
-€::~€( void ) { std::cout << "Deconstructor called" << std::endl; }
-
-€ &€::operator=(const € &€) { return (*this); }
+	public:
+		€ (void);
+		€ (const € &€);
+		~€(void);
+		€ &operator(const € &€);
+};
